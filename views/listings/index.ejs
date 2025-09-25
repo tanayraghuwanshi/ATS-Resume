@@ -1,0 +1,32 @@
+<% layout("layouts/boilerplate") %>
+    <div class="container-fluid">
+        <div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-2">
+            <% for(listing of allListings){ %>
+            <div class="card col" style="width: 29%;">
+                <div class="img">
+                    <img src="<%= listing.image.url %>" class="card-img-top" alt="No Image" style="height: 20rem;">
+                   <div class="card-img-overlay d-flex align-items-center ">
+                        <i><b><%= listing.description %></b></i>
+                        
+                   </div>
+                   <div class="card-img overlay mt-2 mb-1">
+                     <p class="starability-result" data-rating=<%= listing.rating %>>
+                                            Rated: 3 stars
+                        </p>
+                   </div>
+                </div>
+                <div class="card-body pt-0">
+                    <h5 class="card-title"><%= listing.title %></h5>
+                    
+                    <p> &#8377; <%= listing.price.toLocaleString("en-IN") %> / night</p>
+                    <a href="/listings/<%= listing._id %>" class="btn btn-primary add-btn">Visit  &nbsp; &nbsp;<i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+ 
+
+            <% } %>
+    
+        </div>
+    </div>
+
+

@@ -1,0 +1,38 @@
+<% layout("layouts/boilerplate") %>
+
+
+<div class="row m-2">
+    <h2 style="margin-left: 2rem;" class="offset-2"> Get Started with TrekInn</h2>
+    <div class="col-6 offset-4">
+
+        <form action="/user/signup" method="POST" novalidate class="needs-validation">
+            <div class="mb-3 mt-2">
+            
+                <label for="username" class="form-label">User Name : </label>
+                <input type="text" name="username" placeholder="@" id="username" class="form-control" required style="text-align: end;">
+                <div class="valid-feedback">Good!</div>
+            </div>
+            <div class="mb-3">
+            
+                <label for="email" class="form-label">Email : </label>
+                <input type="text" name="email" value="@gmail.com" id="email" class="form-control" required style="text-align: end;">
+                <div class="valid-feedback">Good!</div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password : </label>
+                <input type="password" name="password" placeholder="" id="password" class="form-control" required style="text-align: end;">
+                <div class="valid-feedback">Good!</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="confirmpassword" class="form-label">Confirm Password : </label>
+                <input type="password" name="confirmpassword" placeholder="" id="confirmpassword" class="form-control" required style="text-align: end;">
+                <div class="valid-feedback">Good!</div>
+            </div>
+
+            <button class="btn btn-dark add-btn">Register</button>
+        </form>
+
+        <p class="form-label mt-5" >Have an account? <a href="/user/login" class="btn dark-outline-btn outline-btn" style="margin-left: 5px; margin-bottom: 5px;">Login</a></p>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+<% layout("layouts/boilerplate") %>
+
+<div class="container m-10 d-flex align-items-center justify-content-center" style="flex-direction: column;">
+  <h1>Error <%= err.statusCode || 500 %></h1>
+  <p><%= err.message || "Something went wrong!" %></p>
+</div>

@@ -1,0 +1,54 @@
+<% layout("layouts/boilerplate") %>
+    <br><br>
+    <h2 style="margin-left: 2rem;"> Create New Listing</h2>
+    <div class="row m-5">
+        <div class="col-10 offset-2">
+            <form action="/listings" method = "POST" novalidate class="needs-validation" enctype="multipart/form-data">
+        <div class="mb-3">
+            
+            <label for="title" class="form-label">Title : </label>
+            <input type="text" name="listing[title]" placeholder="ENTER TITLE" class="form-control" required>
+            <div class="invalid-feedback">Haven't you decided a name for your Hotel!</div>
+            <div class="valid-feedback">Yeah Good!</div>
+        </div>
+       
+        <div class="mb-3">
+            <label for="description" class="form-label">Description: </label>
+            <textarea name="listing[description]" placeholder="ENTER DESCRIPTION" class="form-control" required></textarea>
+            <div class="invalid-feedback">Add some ammenities and features of you Hotel!</div>
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Upload Image : </label>
+            <input type="file" name="listing[image]"class="form-control" required>
+            <div class="invalid-feedback">Show your luxirious hotel!</div>
+            <div class="valid-feedback">Your Hotel is very luxirious</div>
+        </div>
+      
+        <div class="row">
+            <div class="mb-3 col-md-4">
+                <label for="price" class="form-label">Price: </label>
+                <input name="listing[price]" placeholder="ENTER PRICE" class="form-control" required>  
+                <div class="invalid-feedback">Don't you charge for your rooms?</div>
+            </div>
+
+            <div class="mb-3 col-md-8">
+                <label for="country" class="form-label">Country: </label>
+                <input type="text" name="listing[country]" placeholder="ENTER COUNTRY" class="form-control" required>
+                <div class="invalid-feedback">Which Country???</div>
+            </div>
+        </div>
+        
+        <div class="mb-5">
+            <label for="location" class="form-label">Location: </label>
+            <input type="text" name="listing[location]" placeholder="ENTER LOCATION" class="form-control" required>
+            <div class="invalid-feedback">Is your Hotel is in Heaven? Give the location details!</div>
+        </div>
+        
+       
+       
+        <button class="btn btn-dark add-btn">Create</button>
+
+    </form>
+        </div>
+    </div>
+

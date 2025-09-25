@@ -1,0 +1,203 @@
+html, body {
+  overflow-x: hidden;
+}
+
+
+
+body{
+    
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+/* Navbar */
+
+
+
+.navbar img{
+    height: 5.5rem;   
+    width: 5.5rem; 
+    margin-right: 2rem;
+}
+
+.navbar{
+    
+    height: 7rem;
+    background-color: white;
+}
+
+.nav-link{
+    color: black !important;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+footer .name{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .slogan{
+    opacity: 0.5;
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer .name{
+    font-size: 1.5rem;
+}
+
+.f-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 10rem;
+    width: 100%;
+    align-content: space-evenly;
+
+}
+
+.f-social-info, .f-info-links, .name{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.f-social-info i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.f-social-info i:hover, .f-info-links a:hover{
+    color: #89cdbe;
+}
+
+.f-info-links a{
+    margin-right: 1.5rem;
+    margin-left: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* index page */
+.card-img-top{
+    width: 100% !important;
+    object-fit: cover !important;
+    border-radius: 1rem !important;
+}
+
+
+
+.card-body{
+    padding: 0px !important;
+    padding-top: 1rem !important;
+}
+
+.container-fluid .card{
+    padding: 5px !important;
+    border: none !important;
+    margin: 1.5rem;
+    transition: 0.75s ease-in-out;
+}
+
+.container {
+  margin: 0 !important;        /* removes top/bottom margin */
+  padding-left: 0 !important;  /* removes left padding */
+  padding-right: 0 !important; /* removes right padding */
+  flex: 1;
+  margin-top: 20vh !important;
+}
+
+
+.container-fluid{
+    width: 100vw !important;
+    margin: 2rem !important;
+
+}
+
+/* .card:hover{
+    box-shadow: 0px 0px 2px black !important;
+} */
+
+.card-img-overlay{
+    transition: 1s ease-in-out;
+    margin-top: 0px;
+    background-color: white;
+   
+}
+
+.card-img-overlay {
+    color: black;
+    font-weight: 400;
+    background-blend-mode: multiply !important;
+    mix-blend-mode: screen !important;
+    height: 65%;
+    opacity: 0;    
+
+}
+
+.card-img-overlay:hover{
+    height: 20%;
+    opacity: 1;
+}
+
+.add-btn{
+    background-color: #89cdbe !important;
+    border: none !important;
+}
+
+/* show page */
+
+.show-img{
+    height: 60vh !important;
+}
+
+.show-btns{
+    display: flex;
+    font-size: 1.5rem !important;
+}
+
+.show-details li{
+    font-size: 1.5rem !important;
+}
+
+.rangeDiv{
+    display: flex;
+    align-items: center;
+}
+
+.range{
+    color:  #89cdbe !important;
+    width: 15% !important;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.outline-btn{
+    border: 1px solid #89cdbe !important; 
+    color: #89cdbe !important;
+
+}
+
+.outline-btn:hover{
+    background-color: #89cdbe !important;
+    color: white !important;
+}
